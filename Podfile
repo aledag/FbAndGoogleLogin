@@ -6,5 +6,6 @@
 target 'fbLoginTest' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Storage'
 end
 

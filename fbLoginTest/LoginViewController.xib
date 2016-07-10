@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-Y7-paG" customClass="GIDSignInButton">
-                    <rect key="frame" x="180" y="442" width="240" height="128"/>
+                    <rect key="frame" x="180" y="272" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="Ca5-Xz-J5e"/>
@@ -26,18 +26,27 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBP-HE-HYu" customClass="FBSDKLoginButton">
-                    <rect key="frame" x="180" y="289" width="240" height="128"/>
+                    <rect key="frame" x="180" y="119" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ejj-qp-2pC">
+                    <rect key="frame" x="180" y="435" width="240" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="rYh-Y7-paG" firstAttribute="height" secondItem="EBP-HE-HYu" secondAttribute="height" id="5nT-hn-bhD"/>
+                <constraint firstItem="Ejj-qp-2pC" firstAttribute="width" secondItem="rYh-Y7-paG" secondAttribute="width" id="8ax-Vn-VAS"/>
+                <constraint firstItem="Ejj-qp-2pC" firstAttribute="top" secondItem="rYh-Y7-paG" secondAttribute="bottom" constant="35" id="MMa-jD-8VM"/>
+                <constraint firstItem="EBP-HE-HYu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="QMY-Mo-Kb1"/>
                 <constraint firstItem="rYh-Y7-paG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XzK-Yt-ma8"/>
+                <constraint firstItem="Ejj-qp-2pC" firstAttribute="leading" secondItem="rYh-Y7-paG" secondAttribute="leading" id="Yil-8G-sD7"/>
                 <constraint firstItem="rYh-Y7-paG" firstAttribute="top" secondItem="EBP-HE-HYu" secondAttribute="bottom" constant="25" id="iLX-Si-Wbp"/>
                 <constraint firstItem="rYh-Y7-paG" firstAttribute="width" secondItem="EBP-HE-HYu" secondAttribute="width" id="jRY-5I-8pF"/>
-                <constraint firstAttribute="bottom" secondItem="rYh-Y7-paG" secondAttribute="bottom" constant="30" id="lpn-bh-XVe"/>
+                <constraint firstItem="Ejj-qp-2pC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l5R-V1-WuM"/>
                 <constraint firstItem="EBP-HE-HYu" firstAttribute="leading" secondItem="rYh-Y7-paG" secondAttribute="leading" id="sgQ-VJ-Q8x"/>
+                <constraint firstAttribute="bottom" secondItem="Ejj-qp-2pC" secondAttribute="bottom" constant="37" id="z7n-Nw-RRl"/>
             </constraints>
         </view>
     </objects>

@@ -10,16 +10,17 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     @IBOutlet weak var googleLoginButton: GIDSignInButton!
-    //let fbLoginButton = FBSDKLoginButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GIDSignIn.sharedInstance().uiDelegate = self
-        
+        fbLoginButton.delegate = self
+        fbLoginButton.readPermissions = ["public_profile", "email", "user_friends"]
         // Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
         
@@ -33,20 +34,22 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         //fbLoginButton.center = view.center
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        } else if result.isCancelled {
+            print("cancelled login")
+        } else {
+            print("log in success! \(result)")
+            let takePhotoVC = TakePhotoViewController()
+            navigationController?.presentViewController(takePhotoVC, animated: true, completion: nil)
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        print("logging out")
     }
-    */
 
 }

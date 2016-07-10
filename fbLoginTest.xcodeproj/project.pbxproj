@@ -17,6 +17,10 @@
 		89764DD61D31C02A000C282F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89764DD51D31C02A000C282F /* FBSDKCoreKit.framework */; };
 		89764DD81D31C031000C282F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89764DD71D31C031000C282F /* FBSDKShareKit.framework */; };
 		89764DDF1D31C4B7000C282F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89764DDE1D31C4B7000C282F /* GoogleService-Info.plist */; };
+		89764DE61D31FE51000C282F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89764DE41D31FE51000C282F /* DownloadViewController.swift */; };
+		89764DE71D31FE51000C282F /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89764DE51D31FE51000C282F /* DownloadViewController.xib */; };
+		89764DEA1D32024A000C282F /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89764DE81D32024A000C282F /* TakePhotoViewController.swift */; };
+		89764DEB1D32024A000C282F /* TakePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89764DE91D32024A000C282F /* TakePhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		89764DD71D31C031000C282F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		89764DDB1D31C38B000C282F /* fbLoginTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fbLoginTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		89764DDE1D31C4B7000C282F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89764DE41D31FE51000C282F /* DownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		89764DE51D31FE51000C282F /* DownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
+		89764DE81D32024A000C282F /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		89764DE91D32024A000C282F /* TakePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoViewController.xib; sourceTree = "<group>"; };
 		95FC65673A35EEF1DAC2CB37 /* Pods-fbLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fbLoginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fbLoginTest/Pods-fbLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +100,10 @@
 				89764DC81D31BD44000C282F /* LoginViewController.swift */,
 				89764DC91D31BD44000C282F /* LoginViewController.xib */,
 				89764DDB1D31C38B000C282F /* fbLoginTest-Bridging-Header.h */,
+				89764DE41D31FE51000C282F /* DownloadViewController.swift */,
+				89764DE51D31FE51000C282F /* DownloadViewController.xib */,
+				89764DE81D32024A000C282F /* TakePhotoViewController.swift */,
+				89764DE91D32024A000C282F /* TakePhotoViewController.xib */,
 			);
 			path = fbLoginTest;
 			sourceTree = "<group>";
@@ -166,7 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89764DE71D31FE51000C282F /* DownloadViewController.xib in Resources */,
 				89764DC11D31BAB0000C282F /* LaunchScreen.storyboard in Resources */,
+				89764DEB1D32024A000C282F /* TakePhotoViewController.xib in Resources */,
 				89764DBE1D31BAB0000C282F /* Assets.xcassets in Resources */,
 				89764DDF1D31C4B7000C282F /* GoogleService-Info.plist in Resources */,
 				89764DCB1D31BD44000C282F /* LoginViewController.xib in Resources */,
@@ -229,6 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89764DCA1D31BD44000C282F /* LoginViewController.swift in Sources */,
+				89764DE61D31FE51000C282F /* DownloadViewController.swift in Sources */,
+				89764DEA1D32024A000C282F /* TakePhotoViewController.swift in Sources */,
 				89764DB71D31BAB0000C282F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
